@@ -6,7 +6,6 @@ const Welcome = () => {
     <div>
       <h2>Welcome</h2>
       <p>Thank you for signing up!</p>
-      <p>ejucgugijx</p>
     </div>
   );
 };
