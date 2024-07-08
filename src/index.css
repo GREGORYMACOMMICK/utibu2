@@ -1,0 +1,6 @@
+/* index.css */
+body {
+  background: url("./assets/greg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: white; /* Optional: Change text color for better visibility */
+}

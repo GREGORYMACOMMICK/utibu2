@@ -1,0 +1,157 @@
+/* Combined Home.css */
+
+/* Global styles */
+body {
+  background-color: #f8f9fa;
+  /* Light grey background */
+  font-family: Arial, sans-serif;
+  /* Default font family */
+}
+
+.container {
+  margin-top: 20px;
+  /* Top margin for container */
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  /* Vertical padding */
+  position: relative;
+  background-color: #007bff;
+  /* Header background color */
+  color: white;
+  /* Header text color */
+}
+
+.header .logo {
+  border-radius: 50%;
+  /* Make the logo round */
+  height: 60px;
+  /* Logo height */
+  margin-right: 10px;
+  /* Margin for spacing */
+}
+
+.header h1 {
+  color: #343a40;
+  /* Dark grey color */
+  margin: 0 20px;
+  /* Margin around the heading */
+  font-weight: bold;
+  /* Bold font weight */
+}
+
+.input-group {
+  width: 50%;
+  /* Width of the input group */
+}
+
+input.form-control {
+  border-radius: 0;
+  /* Remove border radius for input */
+}
+
+button.btn-primary {
+  border-radius: 0;
+  /* Remove border radius for button */
+}
+
+/* Sidebar and hamburger menu styles */
+.sidebar-toggle {
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.hamburger {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
+  transition: transform 0.3s ease;
+}
+
+.hamburger.open:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.open:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  right: -250px;
+  /* Start off-screen */
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  /* Sidebar background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  z-index: 100;
+  /* Ensure sidebar is above other content */
+}
+
+.sidebar.open {
+  right: 0;
+  /* Slide in when open */
+}
+
+.close-sidebar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  /* Adjust link color */
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: #f0f0f0;
+  /* Light grey background on hover */
+  color: #555;
+  /* Darken text color on hover */
+}
+
+/* Main content styles */
+.content {
+  padding: 20px;
+  /* Padding around content */
+}
+
+h1 {
+  font-size: 4rem;
+  /* Adjust the font size as desired */
+  margin-top: 20px;
+  /* Adjust top margin as needed */
+}
